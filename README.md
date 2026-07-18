@@ -59,20 +59,24 @@ This creates a faster, more consistent workflow for sports media production.
 How It Works
 
 TxLINE Live Match Events
+
             │
             ▼
 
             
 Verified Sports Intelligence
+
             │
             ▼
             
 Local AI Content Generation
+
             │
             ▼
             
             
 Broadcast Ready Content
+
             │
             ▼
             
