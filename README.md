@@ -61,17 +61,21 @@ How It Works
 TxLINE Live Match Events
             │
             ▼
+
             
 Verified Sports Intelligence
             │
             ▼
+            
 Local AI Content Generation
             │
             ▼
             
+            
 Broadcast Ready Content
             │
             ▼
+            
             
 Creator Reviews & Publishes
 
