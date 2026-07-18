@@ -1,1 +1,33 @@
+                    FanCaster Architecture
 
+                    ⚽ Live Football Match
+                              │
+                              ▼
+                 TxLINE Verified Sports Intelligence
+        (Live Events • Scores • Timelines • Match Status)
+                              │
+                              ▼
+                 ┌──────────────────────────┐
+                 │        FanCaster         │
+                 │  Sports Content Platform │
+                 └──────────────────────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        ▼                     ▼                     ▼
+ Event Processing      Match Context        Content Orchestration
+ & Validation            Builder                Engine
+                              │
+                              ▼
+                QVAC Local AI Processing Engine
+      (Secure • On-Device • Private • Low Latency)
+                              │
+        ┌────────────┬────────────┬────────────┬────────────┐
+        ▼            ▼            ▼            ▼
+ AI Commentary   Match Summary  Social Posts  Video Scripts
+                              │
+                              ▼
+                    Creator Review & Editing
+                              │
+                              ▼
+                    Publish Across Platforms
+             YouTube • X • Instagram • Blogs
