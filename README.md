@@ -173,13 +173,33 @@ FanCaster/
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md
 ├── requirements.txt
+├── .gitignore
+│
+├── assets/
+│   └── architecture.png
+│
+├── config/
+│   └── settings.py
 │
 ├── docs/
-├── src/
-├── config/
+│   ├── Architecture.md
+│   └── demo-video.md
+│
 ├── examples/
-├── tests/
-└── assets/
+│   ├── sample_event.json
+│   └── generated_post.txt
+│
+├── src/
+│   ├── app/
+│   ├── editorial/
+│   ├── event_engine/
+│   ├── publishing/
+│   ├── qvac/
+│   └── txline/
+│
+└── tests/
+    └── test_placeholder.py
+
 ```
 
 ---
