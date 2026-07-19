@@ -1,200 +1,228 @@
-FanCaster
+# FanCaster
 
-From Fan to Broadcaster — Powered by TxLINE & QVAC Local AI
+## AI-Powered Sports Media Operating Platform
 
-Technical Documentation: https://docs.google.com/document/d/1hEN2eSrYDDSQYXhRCsi_pZcSl5cItNxSeaBJaAEJRk8/edit?usp=sharing
+**Transforming trusted sports data into publication-ready content with TxLINE and QVAC Local AI.**
 
-One Pager: https://docs.google.com/document/d/1oC4ZM16boWeu2s0652OkwRJqfrBctO6FtmT2cOXTiC4/edit?usp=sharing
+---
 
-Demo Video: https://youtu.be/1CSPoaHWhbE
+## Overview
 
-PPT Deck: https://docs.google.com/presentation/d/1xb2z4rg8_W0RIr8SJ--XLIk7yh6qljF03nBscckfCk8/edit?usp=sharing
+FanCaster is an AI-powered Sports Media Operating Platform designed for sports creators, journalists, digital publishers, and media organizations.
 
+Modern sports publishing demands instant, accurate, and engaging content. During live sporting events, creators often spend valuable time monitoring multiple sources, verifying information, understanding match context, and preparing content before they can publish.
 
-FanCaster is an AI-powered sports content creation platform that transforms verified real-time sports intelligence into broadcast-ready content by combining TxLINE's trusted sports data with QVAC Local AI's secure on-device intelligence.
+FanCaster streamlines this entire workflow by combining trusted sports data from **TxLINE** with **QVAC Local AI** to automatically identify editorial opportunities and generate publication-ready content.
 
-Built for the TxODDS World Cup Hackathon, FanCaster enables sports creators, broadcasters, journalists, streamers, and digital publishers to generate live commentary, match summaries, social media posts, and video scripts within seconds of live match events.
+Although this project demonstrates the workflow using the FIFA World Cup, the architecture is designed to support any sport backed by structured real-time data.
 
-Instead of spending valuable time watching every minute of a match while simultaneously producing content, creators receive intelligent, publication-ready outputs generated from verified sports intelligence through secure local AI processing.
+---
 
-Vision
+# The Problem
 
-Modern sports content creation should be as fast as the game itself.
+Sports creators face several challenges during live events:
 
-FanCaster empowers every sports creator with an AI-powered production assistant that transforms live match intelligence into high-quality content while keeping AI processing secure, responsive, and close to the user through QVAC Local AI.
+- Monitoring multiple sources simultaneously
+- Understanding the significance of rapidly changing events
+- Creating engaging content before the news cycle moves on
+- Maintaining consistency across multiple publishing platforms
+- Balancing speed with accuracy
 
-Our vision is simple:
+By the time content is ready, the audience has often moved on.
 
-Every sports creator should have access to trusted live intelligence and secure local AI capable of turning every match into engaging content.
+---
 
-The Problem
+# The Solution
 
-Today's sports creators compete in an environment where speed matters as much as quality.
+FanCaster continuously monitors trusted sports data, detects meaningful moments, understands their editorial significance, and assists creators by generating publication-ready content within seconds.
 
-During live matches they must simultaneously:
+Instead of replacing creators, FanCaster acts as an AI-powered editorial assistant that enables them to focus on storytelling rather than information gathering.
 
-Follow every important event
-Verify scores and match information
-Write engaging commentary
-Publish social media updates
-Prepare match summaries
-Create video scripts
-Keep audiences continuously engaged
+---
 
-Missing a single major event often means losing audience attention.
+# Architecture
 
-Generic AI writing tools still require creators to manually provide context, while manually producing content during a live match quickly becomes overwhelming.
+```
+Sports Events
+      │
+      ▼
+ TxLINE Sports Data
+      │
+      ▼
+ Event Detection Engine
+      │
+      ▼
+ Editorial Intelligence Engine
+      │
+      ▼
+ QVAC Local AI
+      │
+      ▼
+ Publication Ready Content
+      │
+      ▼
+ Social Platforms
+```
 
-Our Solution
+---
 
-FanCaster combines TxLINE and QVAC Local AI to automate sports content production.
+# Core Components
 
-TxLINE continuously delivers verified real-time sports intelligence.
+## TxLINE Integration
 
-QVAC Local AI securely processes that intelligence directly on the user's device, transforming live events into publication-ready content without relying on external cloud AI services.
+FanCaster uses TxLINE as its trusted sports data layer.
 
-Within seconds FanCaster can generate:
+The platform consumes normalized sports data including:
 
-Live Commentary
-Match Summaries
-Social Media Posts
-Shorts & Video Scripts
-Broadcast Notes
+- Live match events
+- Fixtures
+- Scores
+- Competition information
+- Historical match data
+- Consensus betting odds
 
-Creators remain in complete control by reviewing, editing, and publishing AI-assisted content across their preferred platforms.
+TxLINE enables FanCaster to build editorial intelligence on structured and reliable sports information.
 
-Why TxLINE & QVAC Local AI?
+---
 
-FanCaster is built around two complementary technologies.
+## Editorial Intelligence Engine
 
-⚽ TxLINE — Verified Real-Time Sports Intelligence
+The Editorial Intelligence Engine analyzes incoming sports events and determines:
 
-Every piece of content begins with trusted live match data.
+- Story significance
+- Match momentum
+- Breaking news opportunities
+- Context enrichment
+- Editorial priority
 
-TxLINE provides structured, verified sports intelligence including:
+This transforms raw sports data into meaningful publishing opportunities.
 
-Live match events
-Scores
-Timelines
-Match status
-Verified sporting data
+---
 
-This eliminates the need to rely on unofficial feeds or manually collected information.
+## QVAC Local AI
 
-🧠 QVAC Local AI — Secure On-Device Intelligence
+QVAC provides local AI capabilities that power FanCaster's content generation workflow.
 
-Sports content generation happens locally using QVAC Local AI.
+Using local inference, FanCaster generates:
 
-Instead of transmitting match intelligence to external AI providers, FanCaster performs AI inference securely on the user's device.
+- X posts
+- Instagram captions
+- Match reports
+- Headlines
+- Blog articles
+- Video scripts
+- Match summaries
 
-Benefits include:
+Running AI locally enhances privacy while reducing reliance on external cloud AI services.
 
-Secure local AI processing
-Enhanced data privacy
-Lower latency
-Reduced cloud dependency
-Faster content generation
-Reliable AI-assisted workflows
+---
 
-By combining trusted sports intelligence with secure on-device AI, FanCaster enables creators to produce content quickly without compromising security or performance.
+# Publication Workflow
 
-Product Workflow
+1. Sports events are received from TxLINE.
+2. Events are normalized.
+3. Editorial Intelligence evaluates story significance.
+4. QVAC generates publication-ready content.
+5. Creators review the generated output.
+6. Content is published across digital platforms.
 
-                    Live Match
-                    
-                         │
-                         ▼
-                         
-      TxLINE Verified Sports Intelligence
-      
-                         │
-                         ▼
-                         
-          Event Context & Match Analysis
-          
-                         │
-                         ▼
-                         
-         QVAC Local AI Processing Engine
-         
-                         │
-        ┌────────────┬─────────────┬────────────┐
-        ▼            ▼             ▼            
-                                           
-  Live Commentary  Match Summary  Social Posts
-  
-                         │
-                         ▼
-                         
-              Shorts & Video Scripts
-              
-                         │
-                         ▼
-                         
-             Creator Reviews & Publishes
+---
 
+# Features
 
+- Real-time sports intelligence
+- Trusted normalized sports data
+- Editorial opportunity detection
+- AI-assisted content generation
+- Multi-platform publishing workflow
+- Modular architecture
+- Local AI processing
+- Extensible design
 
-  Key Features
-⚽ Verified Live Match Intelligence
+---
 
-Receive trusted sports intelligence powered by TxLINE.
+# Technology Stack
 
-🧠 Secure Local AI Content Generation
+- TxLINE Sports Data API
+- QVAC Local AI
+- Python
+- REST APIs
+- Docker
+- Modular Service Architecture
 
-Use QVAC Local AI to generate content directly on the device, improving privacy, security, and responsiveness.
+---
 
-🎙 AI Commentary
+# Repository Structure
 
-Generate engaging contextual commentary as live events unfold.
+```
+FanCaster/
+│
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── requirements.txt
+│
+├── docs/
+├── src/
+├── config/
+├── examples/
+├── tests/
+└── assets/
+```
 
-📝 Match Summaries
+---
 
-Automatically produce structured post-match reports within seconds of the final whistle.
-
-📱 Social Media Content
-
-Create ready-to-publish social media updates from verified match events.
-
-🎬 Shorts & Video Scripts
-
-Generate short-form video scripts suitable for YouTube Shorts, Instagram Reels, TikTok, and similar platforms.
-
-👨‍💻 Creator Workflow
-
-Support the complete journey from live event monitoring to content publication.
-
-Use Cases
+# Use Cases
 
 FanCaster is designed for:
 
-Sports Journalists
+- Sports YouTubers
+- Sports journalists
+- Independent creators
+- Digital publishers
+- Sports media organizations
+- Fan communities
 
-Independent Sports Creators
+---
 
-Football Bloggers
+# Roadmap
 
-Live Streamers
+Future enhancements include:
 
-Sports Podcasters
+- Support for additional sports
+- Multilingual content generation
+- AI-powered scheduling
+- Team collaboration
+- Creator analytics
+- Mobile applications
+- Plugin ecosystem
 
-Digital Sports Media
+---
 
-YouTube Channels
+# Built for the TxODDS Hackathon
 
-Football Fan Communities
+FanCaster demonstrates how trusted sports data and local AI can work together to help creators publish faster while maintaining editorial quality.
 
+---
 
-Technology Stack
+# Contributing
 
-TxLINE — Verified Real-Time Sports Intelligence
+Contributions are welcome.
 
-QVAC Local AI — Secure On-Device AI Processing
+Please read **CONTRIBUTING.md** before submitting pull requests.
 
-TypeScript
+---
 
-Node.js
+# License
 
-Modern Web Technologies
+This project is licensed under the Apache 2.0 License.
 
-Solana Ecosystem           
+See the LICENSE file for details.
+
+---
+
+## FanCaster
+
+**One Trusted Data Layer. Every Sporting Moment. Infinite Stories.**
+
