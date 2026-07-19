@@ -1,3 +1,6 @@
+<img width="1536" height="1024" alt="FanCaster Logo" src="https://github.com/user-attachments/assets/bf4cc98f-7dd5-4fea-82b6-547a82a42c55" />
+
+
 # FanCaster
 
 ## AI-Powered Sports Media Operating Platform
@@ -5,6 +8,14 @@
 **Transforming trusted sports data into publication-ready content with TxLINE and QVAC Local AI.**
 
 ---
+One Pager: https://docs.google.com/document/d/1Pg9DjabWAj0j91QJhdpVDB_JoRR4cIAOB7e9JG4Ire4/edit?usp=sharing
+
+Technical Documentation: https://docs.google.com/document/d/1qB3U_VMRcy_h7XJe8ZDG2hKsiYNFGbM_WADXkX9hmdw/edit?usp=sharing
+
+PPT Deck: https://docs.google.com/presentation/d/162Zk7JL-4m3jr6sm90BiqKvmwzp_H3DXzda832_HvIE/edit?usp=sharing
+
+Demo Video: https://youtu.be/QT06q-dNEbY
+
 
 ## Overview
 
